@@ -18,11 +18,11 @@ This project is built using modern web technologies:
 
 ## Features:
 
-**🌙 Dark Mode Support – Eye-friendly browsing anytime**
-**✍️ Markdown-Based Blog System – Just write, save, and publish**
-**⚡ Blazing Fast Performance – Powered by Next.js and Vercel**
-**🎨 Fully Styled with Tailwind CSS – Clean and responsive design**
-**🧱 Easy to Customize – Modify layouts, styles, or add new components**
+- 🌙 Dark Mode Support – Eye-friendly browsing anytime
+- ✍️ Markdown-Based Blog System – Just write, save, and publish
+- ⚡ Blazing Fast Performance – Powered by Next.js and Vercel
+- 🎨 Fully Styled with Tailwind CSS – Clean and responsive design
+- 🧱 Easy to Customize – Modify layouts, styles, or add new components
 
 ## 🛠 Installation and Setup Instructions
 
