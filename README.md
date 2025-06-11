@@ -10,19 +10,19 @@ Byte-0f-Finance is a sleek, markdown-powered blog built for developers and creat
 ## Built With
 
 This project is built using modern web technologies:
-⚡ Next.js – React framework for performance & scalability
-🎨 Tailwind CSS – Utility-first CSS framework for rapid styling
-🌙 Dark Mode – Easily toggle between light and dark themes
-🧠 Markdown – Write blogs effortlessly in .md format
-💻 Vercel – Fast deployment and hosting
+- ⚡ Next.js – React framework for performance & scalability
+- 🎨 Tailwind CSS – Utility-first CSS framework for rapid styling
+- 🌙 Dark Mode – Easily toggle between light and dark themes
+- 🧠 Markdown – Write blogs effortlessly in .md format
+- 💻 Vercel – Fast deployment and hosting
 
 ## Features:
 
-🌙 Dark Mode Support – Eye-friendly browsing anytime
-✍️ Markdown-Based Blog System – Just write, save, and publish
-⚡ Blazing Fast Performance – Powered by Next.js and Vercel
-🎨 Fully Styled with Tailwind CSS – Clean and responsive design
-🧱 Easy to Customize – Modify layouts, styles, or add new components
+**🌙 Dark Mode Support – Eye-friendly browsing anytime**
+**✍️ Markdown-Based Blog System – Just write, save, and publish**
+**⚡ Blazing Fast Performance – Powered by Next.js and Vercel**
+**🎨 Fully Styled with Tailwind CSS – Clean and responsive design**
+**🧱 Easy to Customize – Modify layouts, styles, or add new components**
 
 ## 🛠 Installation and Setup Instructions
 
@@ -48,12 +48,11 @@ To create your own blog post:
 ## 🛎 Support & Feedback
 
 Found a bug or have a feature request?
-🔹 Report Bug
-🔹 Request Feature
+- 🔹 Report Bug
+- 🔹 Request Feature
 
 ## Show your support
 
 ❤️ Show Your Support  
 If you find this project helpful, consider giving it a ⭐ on GitHub!  
 Or, support the creator with a small donation via [PayPal](https://paypal.me/imyusup).
-
