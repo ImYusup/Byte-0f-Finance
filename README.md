@@ -1,7 +1,7 @@
 ## 🚀 Byte-0f-Finance
 
 ✨ Personal Developer Blog – Built with Simplicity, Power, and Style
-<p align="center"> <a href="https://imyusupblogs.vercel.app/" target="_blank">🌐 imyusupblogs.vercel.app</a> </p> <p align="center"> <img src="./Extra/demo.gif" alt="Live Demo GIF" /> </p>
+<p align="center"> <a href="https://imyusupblogs.vercel.app/" target="_blank">🌐 imyusupblogs.vercel.app</a> </p> <p align="center"> </p>
 
 ## 📌 Overview
 
@@ -53,7 +53,7 @@ Found a bug or have a feature request?
 
 ## Show your support
 
-❤️ Show Your Support
-If you find this project helpful, consider giving it a ⭐ on GitHub!
-Or, support the creator with a small donation:
-<a href="https://paypal.me/imyusup" target="_blank"> <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal button" height="60px" width="217px"> </a>
+❤️ Show Your Support  
+If you find this project helpful, consider giving it a ⭐ on GitHub!  
+Or, support the creator with a small donation via [PayPal](https://paypal.me/imyusup).
+
