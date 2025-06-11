@@ -51,8 +51,7 @@ Found a bug or have a feature request?
 - 🔹 Report Bug
 - 🔹 Request Feature
 
-## Show your support
+## ❤️ Show your support
 
-❤️ Show Your Support  
 If you find this project helpful, consider giving it a ⭐ on GitHub!  
 Or, support the creator with a small donation via [PayPal](https://paypal.me/imyusup).
