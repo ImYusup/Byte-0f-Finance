@@ -28,7 +28,7 @@ export default function Home({ blogs, topics }) {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blogs.soumya-jit.tech/" />
+        <meta property="og:url" content="https://imyusupblogs.vercel.app/" />
         <meta property="og:title" content="Byte-0f-Finance 🚀" />
         <meta
           property="og:description"
@@ -36,11 +36,11 @@ export default function Home({ blogs, topics }) {
         />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/imyusup4419/Byte-0f-Finance/main/Extra/sc.png"
+          content="https://raw.githubusercontent.com/imyusup/Byte-0f-Finance/main/Extra/sc.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://blogs.soumya-jit.tech/" />
+        <meta property="twitter:url" content="https://imyusupblogs.vercel.app/" />
         <meta property="twitter:title" content="Byte-0f-Finance 🚀" />
         <meta
           property="twitter:description"
@@ -48,8 +48,15 @@ export default function Home({ blogs, topics }) {
         />
         <meta
           property="twitter:image"
-          content="https://raw.githubusercontent.com/imyusup4419/Byte-0f-Finance/main/Extra/sc.png"
+          content="https://raw.githubusercontent.com/imyusup_/Byte-0f-Finance/main/Extra/sc.png"
         />
+
+        {/* AdSense Auto Ads Script */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7448328675787714"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
 
       <div className="min-h-screen relative bg-white dark:bg-gray-900">
