@@ -54,4 +54,5 @@ Found a bug or have a feature request?
 ## ❤️ Show your support
 
 If you find this project helpful, consider giving it a ⭐ on GitHub!  
-Or, support the creator with a small donation via <a href="https://paypal.me/imyusup" target="_blank" rel="noopener noreferrer">PayPal</a>.
+Or, support the creator with a small donation via 
+<a href="https://paypal.me/imyusup" target="_blank" rel="noopener noreferrer">PayPal</a>.
