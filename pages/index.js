@@ -1,8 +1,9 @@
-import Head from "next/head";
+import { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import BlogHeader from "../Components/BlogHeader";
+import SEO from "../Components/SEO";
 import { getAllBlogPosts, getAllTopics } from "../Lib/Data";
 
 export const getStaticProps = () => {
@@ -17,51 +18,46 @@ export const getStaticProps = () => {
 };
 
 export default function Home({ blogs, topics }) {
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error("Adsense error:", e);
+    }
+  }, []);
+
   return (
     <>
-      <Head>
-        <title>Byte-0f-Finance 💸</title>
-        <meta name="title" content="Byte-0f-Finance 🚀" />
-        <meta
-          name="description"
-          content="Tech blogs and articles on various topics related to Software Development"
-        />
+      <SEO
+        title="Byte-0f-Finance 💸"
+        description="Tech blogs and insights on Crypto, Stocks, and Commodities — covering Bitcoin, Ethereum, Nvidia, Gold, and more."
+        url="https://imyusupblogs.vercel.app"
+        image="https://raw.githubusercontent.com/imyusup/Byte-0f-Finance/main/Extra/sc.png"
+        keywords="Bitcoin, Ethereum, Solana, SUI, Hyperliquid, Microsoft, Nvidia, Apple, Amazon, Google, Gold, Silver, Cryptocurrency, Stocks, Commodities, DeFi, Saving, Staking, Investing, Tech, AI, Trading, Layer1, Perpetuals, E-Commerce, Cloud, Inflation-Hedge, Safe-Haven, Precious-Metals, Green-Energy"
+      />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://imyusupblogs.vercel.app/" />
-        <meta property="og:title" content="Byte-0f-Finance 🚀" />
-        <meta
-          property="og:description"
-          content="Tech blogs and articles on various topics related to Software Development"
-        />
-        <meta
-          property="og:image"
-          content="https://raw.githubusercontent.com/imyusup/Byte-0f-Finance/main/Extra/sc.png"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://imyusupblogs.vercel.app/" />
-        <meta property="twitter:title" content="Byte-0f-Finance 🚀" />
-        <meta
-          property="twitter:description"
-          content="Tech blogs and articles on various topics related to Software Development"
-        />
-        <meta
-          property="twitter:image"
-          content="https://raw.githubusercontent.com/imyusup_/Byte-0f-Finance/main/Extra/sc.png"
-        />
-
-        {/* AdSense Auto Ads Script */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7448328675787714"
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
+      {/* Google AdSense Script */}
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7448328675787714"
+        crossOrigin="anonymous"
+      ></script>
 
       <div className="min-h-screen relative bg-white dark:bg-gray-900">
         <Navbar topics={topics} />
         <Header />
+
+        {/* Manual AdSense unit */}
+        <div className="px-4 py-6 flex justify-center">
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-7448328675787714"
+            data-ad-slot="9654195362"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </div>
 
         <div className="px-0.5 md:px-7 pb-14 pt-6 mx-auto">
           <div className="flex flex-wrap">

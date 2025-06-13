@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://imyusupblogs.vercel.app/sitemap.xml
