@@ -41,11 +41,7 @@ export default function Document() {
         />
 
         {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
-          content="APt9AxBXG4XtoiV_g9wEQv6bnlYLnQcF1IR_T79xuow"
-        />
-
+        <meta name="google-site-verification" content="tLIZwa9r9NjkQ5jb2vrZle3-BSCCwDgQZrZ3lAZX8uQ" />
       </Head>
       <body>
         <Main />
