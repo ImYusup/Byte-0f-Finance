@@ -4,9 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Google Site Verification */}
-        <meta name="google-site-verification" content="tLIZwa9r9NjkQ5jb2vrZle3-BSCCwDgQZrZ3lAZX8uQ" />
-
         {/* Google AdSense */}
         <script
           async
