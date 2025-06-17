@@ -47,7 +47,7 @@ export default function Document() {
             src="https://www.googletagmanager.com/ns.html?id=GT-PH3HSDZ9"
             height="0"
             width="0"
-            style="display:none;visibility:hidden"
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
 

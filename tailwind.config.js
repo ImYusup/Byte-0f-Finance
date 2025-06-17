@@ -1,8 +1,10 @@
 const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./Components/**/*.{js,ts,jsx,tsx}"],
-  // darkMode: false, // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./Components/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -23,6 +25,14 @@ module.exports = {
               },
               code: { color: theme("colors.blue.400") },
             },
+            img: {
+              marginTop: spacing[4],
+              marginBottom: spacing[4],
+              borderRadius: theme("borderRadius.lg"),
+              maxWidth: "100%",
+              height: "auto",
+              display: "block",
+            },
             "h2,h3,h4": {
               "scroll-margin-top": spacing[32],
             },
@@ -40,6 +50,14 @@ module.exports = {
                 color: theme("colors.blue.600"),
               },
               code: { color: theme("colors.blue.400") },
+            },
+            img: {
+              marginTop: spacing[4],
+              marginBottom: spacing[4],
+              borderRadius: theme("borderRadius.lg"),
+              maxWidth: "100%",
+              height: "auto",
+              display: "block",
             },
             blockquote: {
               borderLeftColor: theme("colors.gray.700"),

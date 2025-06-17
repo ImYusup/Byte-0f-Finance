@@ -1,36 +1,38 @@
-import { getAllBlogPosts, getAllTopics } from "../../Lib/Data";
+import { useEffect } from "react";
+import Head from "next/head";
 import { serialize } from "next-mdx-remote/serialize";
+import { SWRConfig } from "swr";
+
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import Head from "next/head";
 import BlogInner from "../../Components/BlogInner";
 import BlogShare from "../../Components/BlogShare";
 import Comments from "../../Components/Comments";
-import { SWRConfig } from "swr";
-import { remarkHeadingId } from "remark-custom-heading-id";
-import { getHeadings } from "../../Lib/GetHeadings";
 import LikeBtn from "../../Components/LikeBtn";
+
+import { getAllBlogPosts, getAllTopics } from "../../Lib/Data";
+import { getHeadings } from "../../Lib/GetHeadings";
+import { remarkHeadingId } from "remark-custom-heading-id";
 
 export const getStaticPaths = () => {
   const allBlogs = getAllBlogPosts();
   return {
     paths: allBlogs.map((blog) => ({
       params: {
-        id: String(blog.data.Title.split(" ").join("-").toLowerCase()),
+        slug: String(blog.data.Title.split(" ").join("-").toLowerCase()),
       },
     })),
     fallback: false,
   };
 };
 
-export const getStaticProps = async (context) => {
-  const params = context.params;
+export const getStaticProps = async ({ params }) => {
   const allBlogs = getAllBlogPosts();
   const allTopics = getAllTopics();
 
   const page = allBlogs.find(
     (blog) =>
-      String(blog.data.Title.split(" ").join("-").toLowerCase()) === params.id
+      String(blog.data.Title.split(" ").join("-").toLowerCase()) === params.slug
   );
 
   if (!page) return { notFound: true };
@@ -49,15 +51,23 @@ export const getStaticProps = async (context) => {
     props: {
       data,
       content: mdxSource,
-      id: params.id,
+      slug: params.slug,
       headings,
       topics: allTopics,
     },
   };
 };
 
-function BlogById({ data, content, id, headings, topics }) {
-  const shareUrl = `https://imyusupblogs.vercel.app/blogs/${id}`;
+export default function BlogPage({ data, content, slug, headings, topics }) {
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error("Adsense error:", e);
+    }
+  }, []);
+
+  const shareUrl = `https://imyusupblogs.vercel.app/blog/${slug}`;
   const imageUrl = `https://raw.githubusercontent.com/imyusup/Byte-0f-Finance/main/public${data.HeaderImage}`;
 
   return (
@@ -96,11 +106,11 @@ function BlogById({ data, content, id, headings, topics }) {
 
         <div className="py-12 px-2 md:px-6">
           <BlogInner data={data} content={content} headings={headings} />
-          <LikeBtn id={id} />
+          <LikeBtn id={slug} />
           <BlogShare data={data} />
 
           <SWRConfig>
-            <Comments id={id} />
+            <Comments id={slug} />
           </SWRConfig>
         </div>
 
@@ -109,5 +119,3 @@ function BlogById({ data, content, id, headings, topics }) {
     </>
   );
 }
-
-export default BlogById;

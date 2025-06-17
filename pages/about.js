@@ -18,7 +18,7 @@ function about({ topics }) {
       <Navbar topics={topics} />
       <div className="max-w-2xl pt-20 pb-32 px-6 text-center mx-auto">
         <div className="h-64 w-full justify-center flex">
-          <img src="/about.png" className="h-64" />
+          <img src="/about.png" alt="About Me" className="h-64" />
         </div>
         <h2 className="text-3xl font-semibold text-gray-700 py-4 dark:text-gray-200">
           Hi,{" "}
@@ -30,7 +30,7 @@ function about({ topics }) {
         <p className="text-gray-600 mt-4 dark:text-indigo-200">
           I am looking to remote position. My field of Interest's are building new Web
           Technologies and Products and also in areas related to Deep Learning
-          and Natural Launguage Processing. 
+          and Natural Launguage Processing.
         </p>
 
         <div className="text-center pt-8">
@@ -41,7 +41,7 @@ function about({ topics }) {
               target="_blank"
               href="https://imyusup.vercel.app/"
             >
-              See My Works
+              View My Works
             </a>
           </button>
 

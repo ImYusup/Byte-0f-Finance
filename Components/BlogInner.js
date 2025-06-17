@@ -4,15 +4,19 @@ import Toc from "./Toc";
 
 function BlogInner({ data, content, headings }) {
   return (
-    <div className="mx-auto max-w-screen-xl px-6 grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-8">
+    <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-8">
       {/* LEFT: Main Content */}
       <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg pb-8">
-        {/* Header Image */}
-        <img
-          className="object-cover w-full h-72 mb-8 rounded-t-lg"
-          src={data.HeaderImage}
-          alt="Article Image"
-        />
+        
+        {/* Responsive Header Image */}
+        <div className="w-full overflow-hidden rounded-t-lg mb-8">
+          <img
+            src={data.HeaderImage}
+            alt="Article Image"
+            className="w-full h-auto object-cover"
+            style={{ aspectRatio: '900 / 407' }} 
+          />
+        </div>
 
         <div className="p-4">
           {/* Tags */}
@@ -38,7 +42,7 @@ function BlogInner({ data, content, headings }) {
           </div>
 
           {/* Article Content */}
-          <article className="prose max-w-xs sm:max-w-sm md:max-w-prose lg:prose-lg py-7 dark:prose-dark mx-auto">
+          <article className="prose prose-img:rounded-lg prose-img:mx-auto prose-img:w-full prose-img:h-auto max-w-xs sm:max-w-sm md:max-w-prose lg:prose-lg py-7 dark:prose-dark mx-auto">
             <MDXRemote {...content} />
           </article>
 
